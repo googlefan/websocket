@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>websocket</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div id='log'></div>
-    <input type='text' id='mes'>
-    <button type='button' id='sendMes'>Send</button><br>
-    <input type='text' id='custMes'>
-    <button type='button' id='sendCustMes'>Brodcast</button>
+    <div id="log"></div>
+    <form onsubmit="return false;">
+      <input type="text" id="custMes" autofocus>
+      <input type="submit" id="sendCustMes" value="Brodcast">
+    </from>
+    <script src="jquery-2.1.4.js"></script>
     <script src='http://mywebd.imwork.net:22222/socket.io/socket.io.js'></script>
     <script src="main.js"></script>
   </body>
